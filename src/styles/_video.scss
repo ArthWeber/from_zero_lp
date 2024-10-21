@@ -1,17 +1,45 @@
-.video {
+@use 'var';
+
+.show {
     padding: 80px 0;
-    background-image: linear-gradient(#BF60A6, #BD54BF, #050D03);
+
+    &--player {
+        background-image: linear-gradient( var.$bgColor3, var.$bgColor5);
+    }
+
+    &--emily {
+        background-image: linear-gradient( var.$bgColor5, var.$bgColor1);
+    }
+
+    &--return {
+        background-image: linear-gradient( var.$bgColor1, var.$bgColor4);
+    }
+
+    &--event {
+        background-image: linear-gradient( var.$bgColor4, var.$bgColor2, var.$bgColor3);
+    }
+
+    &--img-left {
+
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
 
     .container {
         display: flex;
+        gap: 40px;
+    }
+
+    &__img {
+        height: 280px;
     }
 
     &__player {
         max-width: 560px;
     }
 
-    &__details {
-        margin-right: 40px;
+    &__details {        
         max-width: 480px;        
 
         &__title {
