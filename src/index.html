@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
         <div class="container">
             <img class="hero__logo" src="./images/lp_logo_2024.png" alt="EBAC">
             <p class="hero__text">
-                O show mais aguardado de 2024 começa em 30d 12h 20m 15s
+                O show mais aguardado de 2024 <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -38,7 +39,7 @@
         </div>
     </header>
     <section class="show show--player">
-        <div class="container">
+        <div data-aos="fade-right" class="container">
             <div class="show__details">
                 <h2 class="show__details__title">The Emptiness Machine</h2>
                 <p class="show__details__description">
@@ -49,7 +50,7 @@
         </div>
     </section>
     <section class="show show--emily show--img-left">
-        <div class="container">
+        <div data-aos="fade-left" class="container">
             <div class="show__details">
                 <h2 class="show__details__title">Emily Armstrong</h2>
                 <p class="show__details__description">
@@ -60,7 +61,7 @@
         </div>
     </section>
     <section class="show show--return">
-        <div class="container">
+        <div data-aos="fade-right" class="container">
             <div class="show__details">
                 <h2 class="show__details__title">O grande retorno!</h2>
                 <p class="show__details__description">
@@ -71,7 +72,7 @@
         </div>
     </section>
     <section class="show show--event show--img-left">
-        <div class="container">
+        <div data-aos="fade-left" class="container">
             <div class="show__details">
                 <h2 class="show__details__title">Show em 16/11/2024</h2>
                 <p class="show__details__description">
@@ -82,6 +83,7 @@
         </div>
     </section>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./scripts/main.js"></script>
 </body>
 </html>
