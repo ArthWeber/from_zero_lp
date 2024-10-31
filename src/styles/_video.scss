@@ -2,6 +2,7 @@
 
 .show {
     padding: 80px 0;
+    overflow: hidden;
 
     &--player {
         background-image: linear-gradient( var.$bgColor3, var.$bgColor5);
